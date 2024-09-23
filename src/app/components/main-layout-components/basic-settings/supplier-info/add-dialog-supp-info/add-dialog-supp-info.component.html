@@ -1,0 +1,18 @@
+<h2 mat-dialog-title class="text-center">Company Information </h2>
+<mat-dialog-content >
+  <form [formGroup]="supplierData">
+    <app-miniforminput [label]="'Supplier Name'" [placeholder]="'Name'" [controlName]="'userName'"> </app-miniforminput>
+    <app-miniforminput [label]="'City'" [placeholder]="'City'" [controlName]="'city'"> </app-miniforminput>
+    <app-miniforminput [label]="'Detailed Address'" [placeholder]="'Detailed Address'" [controlName]="'address'"> </app-miniforminput>
+    <app-miniforminput [label]="'Person In Charge'" [placeholder]="'Person In Charge'" [controlName]="'manager'"> </app-miniforminput>
+    <app-miniforminput [label]="'E-mail'" [placeholder]="'E-mail@'" [controlName]="'email'"> </app-miniforminput>
+    <app-miniforminput [label]="'Contact Information'" [placeholder]="'Telephone'" [controlName]="'contactTelephone'"> </app-miniforminput>
+    <app-miniforminput [label]="'creator'" [placeholder]="'creator'" [controlName]="'creator'"> </app-miniforminput>
+    <app-miniforminput [label]="'create Time'" [placeholder]="'create Time'" [controlName]="'createTime'"> </app-miniforminput>
+    <app-miniforminput [label]="'last Update Time'" [placeholder]="'last Update Time'" [controlName]="'lastUpdateTime'"> </app-miniforminput>
+</form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button color="warn" (click)="onNoClick()">Cancel</button>
+  <button mat-button [disabled]="!supplierData.valid" (click)="submit()" cdkFocusInitial>Submit</button>
+</mat-dialog-actions>

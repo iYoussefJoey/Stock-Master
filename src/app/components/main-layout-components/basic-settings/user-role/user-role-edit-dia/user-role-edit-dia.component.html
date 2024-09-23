@@ -1,0 +1,11 @@
+<h2 mat-dialog-title class="text-center">Company Information </h2>
+<mat-dialog-content >
+  <form [formGroup]="userData">
+    <app-miniforminput [label]="'User Role'" [placeholder]="'User Role'" [controlName]="'userRole'"> </app-miniforminput>
+    <app-miniforminput [label]="'Valid'" [placeholder]="'Valid'" [controlName]="'valid'"> </app-miniforminput>
+</form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button color="warn" (click)="onNoClick()">Cancel</button>
+  <button mat-button (click)="onSave()" cdkFocusInitial>Submit</button>
+</mat-dialog-actions>

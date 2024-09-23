@@ -1,0 +1,15 @@
+<h2 mat-dialog-title class="text-center">Company Information </h2>
+<mat-dialog-content >
+  <form [formGroup]="ownerInformationData">
+    <app-miniforminput [label]="'warehouseName'" [placeholder]="'Warehouse Name'" [controlName]="'userName'"> </app-miniforminput>
+    <app-miniforminput [label]="'Detailed Address'" [placeholder]="'Detailed Address 90PLV street'" [controlName]="'detailedAddress'"> </app-miniforminput>
+    <app-miniforminput [label]="'Contact Information'" [placeholder]="'Contact Information'" [controlName]="'contactInformation'"> </app-miniforminput>
+    <app-miniforminput [label]="'Manager'" [placeholder]="'Manager'" [controlName]="'personInCharge'"> </app-miniforminput>
+    <app-miniforminput [label]="'Creator'" [placeholder]="'Creator'" [controlName]="'creator'"> </app-miniforminput>
+    <app-miniforminput [label]="'Create Time'" [placeholder]="'Create Time'" [controlName]="'createTime'"> </app-miniforminput>
+</form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button color="warn" (click)="onNoClick()">Cancel</button>
+  <button mat-button [disabled]="!ownerInformationData.valid" (click)="submit()" cdkFocusInitial>Submit</button>
+</mat-dialog-actions>

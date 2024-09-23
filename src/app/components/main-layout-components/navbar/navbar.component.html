@@ -1,0 +1,230 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened class="mat-elevation-z20">
+    <div>
+      <img src="/assets/sidebar.png" height="50px" width="292px" alt="" />
+
+      <mat-nav-list>
+        <button mat-button routerLinkActive="cdhover" routerLink="/home">
+          <mat-icon>home</mat-icon>
+         {{"homePage" | translate}}
+        </button>
+<!-- ------------------------------------------------------- thats the basic setting panel ------------------------------------------------- -->
+        <mat-accordion>
+          <mat-expansion-panel >
+            <mat-expansion-panel-header>
+              <button id="removehover" mat-button>
+                {{"basicSettings" | translate}}
+                <mat-icon>settings</mat-icon>
+              </button>
+            </mat-expansion-panel-header>
+            <mat-nav-list class="submenu">
+              <button
+                mat-button
+                routerLinkActive="cdhover"
+                routerLink="/companyInfo"
+              >
+                <mat-icon>home_work</mat-icon> {{"companyInformation" | translate}}
+              </button>
+              <button
+                mat-button
+                routerLinkActive="cdhover"
+                routerLink="/userRole"
+              >
+                <mat-icon>contacts</mat-icon> {{"userRole" | translate}}
+              </button>
+              <button
+                mat-button
+                routerLinkActive="cdhover"
+                routerLink="/permissonSettings"
+              >
+                <mat-icon>menu</mat-icon> {{"permissionSettings" | translate}} 
+                <!-- (Admin Only) -->
+              </button>
+              <button
+                mat-button
+                routerLinkActive="cdhover"
+                routerLink="/usermanagement"
+              >
+                <mat-icon>person</mat-icon> {{"userManagement" | translate}}
+              </button>
+              <button
+              style="font-size: 13px;"
+                mat-button
+                routerLinkActive="cdhover"
+                routerLink="/commoditycategory"
+              >
+                <mat-icon>menu</mat-icon> {{"commodityCategory" | translate}}
+              </button>
+              <button style="font-size: 13px;"
+                mat-button
+                routerLinkActive="cdhover"
+                routerLink="/commditymanagement"
+              >
+                <mat-icon>shopping_cart</mat-icon> {{"commdityManagement" | translate}}
+              </button>
+              <button
+                mat-button
+                routerLinkActive="cdhover"
+                routerLink="/supplierinfo"
+              >
+                <mat-icon>info</mat-icon> {{"supplierInfo" | translate}}
+              </button>
+              <button
+                mat-button
+                routerLinkActive="cdhover"
+                routerLink="/warehousesetting"
+              >
+                <mat-icon>house</mat-icon> {{"warehouseSetting" | translate}}
+              </button>
+              <button
+                mat-button
+                routerLinkActive="cdhover"
+                routerLink="/ownerinformation"
+              >
+                <mat-icon>manage_accounts</mat-icon> {{"ownerInformation" | translate}}
+              </button>
+              <button
+                mat-button
+                routerLinkActive="cdhover"
+                routerLink="/freightsetting"
+              >
+                <mat-icon>local_shipping</mat-icon>
+                {{"freightSettings" | translate}}
+              </button>
+              <button
+                mat-button
+                routerLinkActive="cdhover"
+                routerLink="/customerinformation"
+              >
+                <mat-icon>support_agent</mat-icon>
+                {{"customerInfo"| translate}}
+              </button>
+            </mat-nav-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <button
+          mat-button
+          routerLinkActive="cdhover"
+          routerLink="/recievingManagement"
+        >
+          <mat-icon>home_work</mat-icon> {{"recievingMangement"| translate}}
+        </button>
+<!-- ---------------------------------------------thats the static analysis panel---------------------------------------------- -->
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <button mat-button routerLinkActive="cdhover" routerLink="/staticAnalysis">
+        <mat-icon>pie_chart</mat-icon>{{"staticAnalysis" | translate}}
+      </button>
+    </mat-expansion-panel-header>
+    <mat-nav-list class="submenu">
+      <button mat-button routerLinkActive="cdhover" routerLink="/recievingManagement">
+        <mat-icon>home_work</mat-icon>{{"stockManagement" | translate}}
+      </button>
+      <button mat-button routerLinkActive="cdhover" routerLink="/staticAnalysis">
+        <mat-icon>pie_chart</mat-icon>{{"safetyStock" | translate}}
+      </button>
+      <button mat-button routerLinkActive="cdhover" routerLink="/wareHouseWorking">
+        <mat-icon>engineering</mat-icon>{{"receivingStatistics" | translate}}
+      </button>
+      <button mat-button routerLinkActive="cdhover" routerLink="/deliveryManagement">
+        <mat-icon>person</mat-icon>{{"shipmentStatistics" | translate}}
+      </button>
+    </mat-nav-list>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <button mat-button routerLinkActive="cdhover" routerLink="/wareHouseWorking">
+        <mat-icon>engineering</mat-icon>{{"wareHouseWorking" | translate}}
+      </button>
+    </mat-expansion-panel-header>
+    <mat-nav-list class="submenu">
+      <button mat-button routerLinkActive="cdhover" routerLink="/recievingManagement">
+        <mat-icon>home_work</mat-icon>{{"warehouseProcessing" | translate}}
+      </button>
+      <button mat-button routerLinkActive="cdhover" routerLink="/staticAnalysis">
+        <mat-icon>pie_chart</mat-icon>{{"inventoryMove" | translate}}
+      </button>
+      <button mat-button routerLinkActive="cdhover" routerLink="/wareHouseWorking">
+        <mat-icon>engineering</mat-icon>{{"inventoryFreeze" | translate}}
+      </button>
+      <button mat-button routerLinkActive="cdhover" routerLink="/deliveryManagement">
+        <mat-icon>person</mat-icon>{{"inventoryAdjust" | translate}}
+      </button>
+      <button mat-button routerLinkActive="cdhover" routerLink="/visualWarehouse">
+        {{"inventoryTake" | translate}}
+        <mat-icon>home</mat-icon>
+      </button>
+    </mat-nav-list>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<button mat-button routerLinkActive="cdhover" routerLink="/deliveryManagement">
+  <mat-icon>person</mat-icon>{{"deliveryManagement" | translate}}
+</button>
+<button mat-button routerLinkActive="cdhover" routerLink="/visualWarehouse">
+  <mat-icon>home</mat-icon>{{"visualWarehouse" | translate}}
+</button>
+      </mat-nav-list>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="container w-100">
+      <mat-toolbar class="mat-elevation-z5 border container">
+        <span
+          class="text-muted h5 ps-4 align-items-center d-flex color fw-light fs-6"
+        >
+        <ng-container *ngFor="let breadcrumb of breadCrumbs; let last = last">
+          
+            <span class="d-flex align-items-center"> <mat-icon>home</mat-icon> <span> {{ breadcrumb.label | translate  }}</span> </span>
+            <ng-container *ngIf="!last">  </ng-container>  <!-- Add a separator except for the last breadcrumb -->
+          </ng-container>
+        </span>
+        <span class="example-spacer"></span>
+
+        <div class="d-flex justify-content-end">
+          <button mat-icon-button [matMenuTriggerFor]="languageMenu">
+            <mat-icon>language</mat-icon>
+          </button>
+          <mat-menu #languageMenu="matMenu">
+            <div
+              class="pointer"
+              *ngFor="let language of languages"
+              (click)="selectLanguage(language)"
+              [ngClass]="{ 'selected-language': selectedLanguage === language.code }"
+            >
+              {{ 'language.' + language.name.toUpperCase() | translate}}
+            </div>
+          </mat-menu>
+        </div>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon
+            matBadge="."
+            matBadgePosition="below"
+            matBadgeSize="small"
+            matBadgeColor="warn"
+          >
+            account_circle
+          </mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <div
+            class="pointer"
+            *ngFor="let systemItems of systemFunctions"
+            (click)="selectedFunctions(systemItems)"
+          >
+            {{ systemItems }}
+          </div>
+        </mat-menu>
+      </mat-toolbar>
+    </div>
+    <div class="container mt-5">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

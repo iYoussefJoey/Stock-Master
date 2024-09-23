@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* styles.scss or component-specific stylesheet */
+
+/* Style for success (green) */
+// ::ng-deep.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface.snackbar-success {
+//     background-color: #4caf50 !important; /* Green color */
+//     color: #fff !important; /* Text color */
+//   }
+  
+//   /* Style for error (red) */
+//   ::ng-deep .snackbar-error {
+//     background-color: #f44336 !important; /* Red color */
+//     color: #fff !important; /* Text color */
+//   }
+  
+//   /* Style for info (blue) */
+//   ::ng-deep .snackbar-info {
+//     background-color: #2196f3 !important; /* Blue color */
+//     color: #fff !important; /* Text color */
+//   }
+:root {
+    --mdc-snackbar-container-color: initial !important; /* Reset to allow custom styling */
+  }

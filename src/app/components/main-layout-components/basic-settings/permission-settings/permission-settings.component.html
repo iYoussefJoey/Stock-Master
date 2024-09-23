@@ -1,0 +1,91 @@
+<mat-card>
+<div class="">
+<div class="row">
+    <div class="col-3" >
+        <mat-card class="m-3 p-1" style="height: 720px;">
+            <table mat-table [dataSource]="leftDataSource" class="">
+
+                <!--- Note that these columns can be defined in any order.
+                      The actual rendered columns are set as a property on the row definition" -->
+              
+      
+              
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                  <th mat-header-cell *matHeaderCellDef> {{"roleName" | translate}}</th>
+                  <td mat-cell *matCellDef="let element"> Adminstrator</td>
+                </ng-container>
+              
+             
+           
+              
+                <tr mat-header-row *matHeaderRowDef="leftDisplayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: leftDisplayedColumns;"></tr>
+              </table>
+              
+              
+          </mat-card>          
+    </div>
+
+    <div class="col-9">
+      <mat-card class="m-3 p-1" style="height: 720px; overflow-y: auto;">
+        <table mat-table [dataSource]="dataSource" multiTemplateDataRows class="">
+          <!-- Define your regular columns first -->
+          <ng-container matColumnDef="menuName">
+            <th mat-header-cell *matHeaderCellDef> {{'menuName' | translate}} </th>
+            <td mat-cell *matCellDef="let element"> {{ element.menuName  }} </td>
+          </ng-container>
+    
+          <ng-container matColumnDef="operate">
+            <th mat-header-cell *matHeaderCellDef> {{'Operate' | translate}} </th>
+            <td mat-cell *matCellDef="let element">
+              <button mat-icon-button>
+                <mat-icon>edit</mat-icon>
+              </button>
+            </td>
+          </ng-container>
+    
+          <!-- Expand button column -->
+          <ng-container matColumnDef="expand">
+            <th mat-header-cell *matHeaderCellDef>&nbsp;</th>
+            <td mat-cell *matCellDef="let element">
+              <button mat-icon-button (click)="(expandedElement = expandedElement === element ? null : element); $event.stopPropagation()">
+                <mat-icon>{{ expandedElement === element ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}</mat-icon>
+              </button>
+            </td>
+          </ng-container>
+    
+          <!-- Expanded row content -->
+          <ng-container matColumnDef="expandedDetail">
+            <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length + 1">
+              <div class="expanded-content" [@detailExpand]="element === expandedElement ? 'expanded' : 'collapsed'">
+                <span>Operation permissions:</span>
+                <button mat-stroked-button color="primary">Save</button>
+                <button mat-stroked-button color="warn">Delete</button>
+                <button mat-stroked-button color="accent">Export</button>
+              </div>
+            </td>
+          </ng-container>
+    
+          <!-- Header row -->
+          <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+    
+          <!-- Regular row -->
+          <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand" class="element-row"
+            (click)="expandedElement = expandedElement === element ? null : element">
+          </tr>
+    
+          <!-- Expanded detail row -->
+          <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="expanded-row"></tr>
+        </table>
+      </mat-card>
+    </div>
+    
+
+    </div>
+
+
+   
+
+</div>
+</mat-card>

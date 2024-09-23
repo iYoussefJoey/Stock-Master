@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Are you Sure you want To delete this Row?</h2>
+<mat-dialog-content
+  >You will not be able to restor the Client Data Again!
+  <p class="fw-bolder">{{ userName | uppercase }}</p></mat-dialog-content
+>
+<mat-dialog-actions>
+  <button mat-flat-button color="primary" (click)="onNoClick()" cdkFocusInitial>
+    No
+  </button>
+  <button mat-raised-button color="warn" (click)="submit()" cdkFocusInitial>
+    Yes
+  </button>
+</mat-dialog-actions>

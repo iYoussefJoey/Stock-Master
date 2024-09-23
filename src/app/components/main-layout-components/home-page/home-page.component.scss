@@ -1,0 +1,22 @@
+.main-title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #9c27b0;
+    font-weight: 700;
+    font-size: 120px;    
+    
+}
+.sub-title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #c9a7cf;
+    line-height: 1px;
+}
+::ng-deep .snackbar-success {
+    background-color: #4caf50 !important; /* Green color */
+    color: #fff !important; /* Text color */
+  }

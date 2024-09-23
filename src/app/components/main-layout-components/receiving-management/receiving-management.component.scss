@@ -1,0 +1,23 @@
+.example-tab-icon {
+    margin-right: 8px;
+  }
+  ::ng-deep .snackbar-success {
+    background-color: #4caf50 !important; /* Green color */
+    color: #fff !important; /* Text color */
+  }
+  
+  /* Style for error (red) */
+  ::ng-deep .snackbar-error {
+    background-color: #f44336 !important; /* Red color */
+    color: #fff !important; /* Text color */
+  }
+  
+  /* Style for info (blue) */
+  ::ng-deep .snackbar-info {
+    background-color: #2196f3 !important; /* Blue color */
+    color: #fff !important; /* Text color */
+  }
+  ::ng-deep .snackbar-error{
+    background-color: #f44336 !important; /* Red color */
+    color: black !important; /* Text color */
+  }

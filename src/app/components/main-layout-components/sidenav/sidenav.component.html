@@ -1,0 +1,98 @@
+<!-- <div class="">
+  <mat-toolbar color="primary" class="mat-elevation-z10">
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Angular Material</span>
+    <span class="example-spacer"></span>
+    <button mat-button routerLinkActive="onhover" routerLink="/home">Home</button>
+    <button mat-button [matMenuTriggerFor]="newitems" color="warn">Master</button>
+    <mat-menu #newitems="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="company">Company</button>
+      <button mat-menu-item [matMenuTriggerFor]="customer">Customer</button>
+      <button mat-menu-item [matMenuTriggerFor]="product">Products</button>
+    </mat-menu>
+    <mat-menu #company="matMenu">
+      <button mat-menu-item>Term</button>
+      <button mat-menu-item>Tax</button>
+      <button mat-menu-item>Currency</button>
+    </mat-menu>
+    <mat-menu #customer="matMenu">
+      <button mat-menu-item>Customer type</button>
+      <button mat-menu-item>Tax</button>
+    </mat-menu>
+    <mat-menu #product="matMenu">
+      <button mat-menu-item>Category</button>
+      <button mat-menu-item [matMenuTriggerFor]="vari">Variant</button>
+      <button mat-menu-item>UOM</button>
+    </mat-menu>
+    <mat-menu #vari="matMenu">
+      <button mat-menu-item>Color</button>
+      <button mat-menu-item>size</button>
+    </mat-menu>
+    <button mat-button routerLinkActive="onhover" routerLink="/input">
+      Input
+    </button>
+    <button mat-button routerLinkActive="onhover" routerLink="/autocomplete">
+      Autocomplete
+    </button>
+    <button mat-raised-button color="primary" class="pad">Sign Up</button>
+    <button
+      class="demo-section loc"
+      mat-icon-button
+      (click)="toggleBadgeVisibility()"
+    >
+      <mat-icon matBadgeColor="warn" matBadge="7" [matBadgeHidden]="hidden"
+        >notifications</mat-icon
+      >
+    </button>
+  </mat-toolbar>
+  </div>
+  <mat-drawer-container autosize>
+    <mat-drawer #drawer mode="side" closed>
+      <mat-nav-list>
+        <mat-list-item>
+          <button mat-button routerLinkActive="cdhover" routerLink="/card">
+            <mat-icon>dashboard</mat-icon>Dashoboard
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button routerLinkActive="cdhover" routerLink="/table">
+            <mat-icon>timeline</mat-icon> Table
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button routerLinkActive="cdhover" routerLink="/slider">
+            <mat-icon>slideshow</mat-icon> Slider
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button routerLinkActive="cdhover">
+            <mat-icon>settings</mat-icon>Settings
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button routerLinkActive="cdhover">
+            <mat-icon>help</mat-icon>Help
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button routerLinkActive="cdhover" routerLink="/formarray">
+            <mat-icon>analytics</mat-icon>Form array
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button routerLinkActive="cdhover" routerLink="/forms">
+            <mat-icon>person</mat-icon>Customer Form
+          </button>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div style="text-align: center; min-height: 900px">
+        <h2 class="text-center">Angular Material</h2>
+        <router-outlet></router-outlet>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+   -->

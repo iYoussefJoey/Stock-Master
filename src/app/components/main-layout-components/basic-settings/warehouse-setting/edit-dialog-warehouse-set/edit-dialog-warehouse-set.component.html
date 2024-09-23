@@ -1,0 +1,18 @@
+<h2 mat-dialog-title class="text-center">Company Information </h2>
+<mat-dialog-content >
+  <form [formGroup]="warehouseUserSettings">
+    <app-miniforminput [label]="'warehouseName'" [placeholder]="'Warehouse Name'" [controlName]="'userName'"> </app-miniforminput>
+    <app-miniforminput [label]="'City'" [placeholder]="'City'" [controlName]="'city'"> </app-miniforminput>
+    <app-miniforminput [label]="'Address'" [placeholder]="'Address'" [controlName]="'address'"> </app-miniforminput>
+    <app-miniforminput [label]="'Contact Telephone'" [placeholder]="'Contact Telephone'" [controlName]="'contactTelephone'"> </app-miniforminput>
+    <app-miniforminput [label]="'Email'" [placeholder]="'E-mail@'" [controlName]="'email'"> </app-miniforminput>
+    <app-miniforminput [label]="'Manager'" [placeholder]="'Manager'" [controlName]="'role'"> </app-miniforminput>
+    <app-miniforminput [label]="'Creator'" [placeholder]="'Creator'" [controlName]="'creator'"> </app-miniforminput>
+    <app-miniforminput [label]="'Create Time'" [placeholder]="'Create Time'" [controlName]="'createTime'"> </app-miniforminput>
+    <app-miniforminput [label]="'Valid'" [placeholder]="'True or False'" [controlName]="'valid'"> </app-miniforminput>
+</form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button color="warn" (click)="onNoClick()">Cancel</button>
+  <button mat-button [disabled]="!warehouseUserSettings.valid" (click)="submit()" cdkFocusInitial>Submit</button>
+</mat-dialog-actions>

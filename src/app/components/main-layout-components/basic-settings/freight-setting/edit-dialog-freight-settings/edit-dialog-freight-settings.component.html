@@ -1,0 +1,18 @@
+<h2 mat-dialog-title class="text-center">Company Information </h2>
+<mat-dialog-content >
+  <form [formGroup]="freightSettingsData">
+    <app-miniforminput [label]="'Carrier Name'" [placeholder]="'Carrier Name'" [controlName]="'userName'"> </app-miniforminput>
+    <app-miniforminput [label]="'Departure City'" [placeholder]="'Departure City '" [controlName]="'departureCity'"> </app-miniforminput>
+    <app-miniforminput [label]="'Arrival City'" [placeholder]="'Arrival City '" [controlName]="'arrivalCity'"> </app-miniforminput>
+    <app-miniforminput [label]="'Weight Fee'" [placeholder]="'Weight Feee'" [controlName]="'weightFee'"> </app-miniforminput>
+    <app-miniforminput [label]="'Volume Fee'" [placeholder]="'Volume Fee'" [controlName]="'volumeFee'"> </app-miniforminput>
+    <app-miniforminput [label]="'Min Payment'" [placeholder]="'Min Payment'" [controlName]="'minPayment'"> </app-miniforminput>
+    <app-miniforminput [label]="'Creator'" [placeholder]="'Creator'" [controlName]="'creator'"> </app-miniforminput>
+    <app-miniforminput [label]="'Create Time'" [placeholder]="'Create Time'" [controlName]="'createTime'"> </app-miniforminput>
+    <app-miniforminput [label]="'Valid'" [placeholder]="'Yes - No'" [controlName]="'valid'"> </app-miniforminput>
+</form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button color="warn" (click)="onNoClick()">Cancel</button>
+  <button mat-button [disabled]="!freightSettingsData.valid" (click)="submit()" cdkFocusInitial>Submit</button>
+</mat-dialog-actions>

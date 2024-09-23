@@ -1,0 +1,134 @@
+<mat-tab-group>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">playlist_add_check</mat-icon>
+        {{'noticeOfArrival' | translate | uppercase }}
+      </ng-template>
+      <mat-card>
+        <mat-card-content >
+          <app-mini-table
+            [data]="noticeOfArrival"
+            [displayedColumns]="displayedColumns1"
+            [columnTranslationMap]="columnTranslationMap"
+            [actionButtonsAboveTable]="actionButtonsAboveTable"
+            [actionButtons]="actionButtons"
+            [inputForm]="inputForm"
+          >
+            </app-mini-table
+          >
+        </mat-card-content>
+      </mat-card>
+          </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">local_shipping</mat-icon>
+        {{'toBeDelivered' | translate | uppercase}}
+
+      </ng-template>
+      <mat-card>
+        <mat-card-content >
+          <app-mini-table
+            [data]="noticeOfArrival"
+            [displayedColumns]="displayedColumns2"
+            [columnTranslationMap]="columnTranslationMap"
+            [actionButtonsAboveTable]="actionButtonsAboveTable2"
+            [actionButtons]="actionButtons"
+            [inputForm]="inputForm"
+          >
+            </app-mini-table
+          >
+        </mat-card-content>
+      </mat-card>
+          </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">electric_rickshaw</mat-icon>
+        {{'toBeUnloaded' | translate | uppercase}}
+
+      </ng-template>
+  
+      <mat-card>
+        <mat-card-content >
+          <app-mini-table
+            [data]="noticeOfArrival"
+            [displayedColumns]="displayedColumns3"
+            [columnTranslationMap]="columnTranslationMap"
+            [actionButtonsAboveTable]="actionButtonsAboveTable2"
+            [actionButtons]="actionButtons"
+            [inputForm]="inputForm"
+          >
+            </app-mini-table
+          >
+        </mat-card-content>
+      </mat-card>
+          </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">sort</mat-icon>
+        {{'toBeSorted' | translate | uppercase}}
+
+      </ng-template>
+  
+      <mat-card>
+        <mat-card-content >
+          <app-mini-table
+            [data]="noticeOfArrival"
+            [displayedColumns]="displayedColumns3"
+            [columnTranslationMap]="columnTranslationMap"
+            [actionButtonsAboveTable]="actionButtonsAboveTable2"
+            [actionButtons]="actionButtons"
+            [inputForm]="inputForm"
+          >
+            </app-mini-table
+          >
+        </mat-card-content>
+      </mat-card>
+          </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">shelves</mat-icon>
+        {{'toBePutOnTheShelf' | translate | uppercase}}
+
+      </ng-template>
+  
+      <mat-card>
+        <mat-card-content >
+          <app-mini-table
+            [data]="noticeOfArrival"
+            [displayedColumns]="displayedColumns3"
+            [columnTranslationMap]="columnTranslationMap"
+            [actionButtonsAboveTable]="actionButtonsAboveTable2"
+            [actionButtons]="actionButtons"
+            [inputForm]="inputForm"
+          >
+            </app-mini-table
+          >
+        </mat-card-content>
+      </mat-card>
+          </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">receipt</mat-icon>
+        {{'receiptDetails' | translate | uppercase}}
+
+      </ng-template>
+  
+      <mat-card>
+        <mat-card-content >
+          <app-mini-table
+            [data]="noticeOfArrival"
+            [displayedColumns]="displayedColumns3"
+            [columnTranslationMap]="columnTranslationMap"
+            [actionButtonsAboveTable]="actionButtonsAboveTable2"
+            [actionButtons]="actionButtons"
+            [inputForm]="inputForm"
+          >
+            </app-mini-table
+          >
+        </mat-card-content>
+      </mat-card>
+          </mat-tab>
+  </mat-tab-group>
+  

@@ -1,0 +1,23 @@
+<h2 mat-dialog-title class="text-center">Company Information </h2>
+<mat-dialog-content >
+  <form [formGroup]="userManagement">
+    <app-miniforminput [label]="'User Number'" [placeholder]="'123'" [controlName]="'userNumber'"> </app-miniforminput>
+    <app-miniforminput [label]="'Name'" [placeholder]="'Name'" [controlName]="'userName'"> </app-miniforminput>
+    <app-miniforminput [label]="'Role'" [placeholder]="'Role'" [controlName]="'role'"> </app-miniforminput>
+    <app-miniforminput [label]="'Commodity Description'" [placeholder]="'Description'" [controlName]="'commodityDescription'"> </app-miniforminput>
+    <app-miniforminput [label]="'Supplier Name'" [placeholder]="'name--zoe'" [controlName]="'supplierName'"> </app-miniforminput>
+    <app-miniforminput [label]="'Brand'" [placeholder]="'brand'" [controlName]="'brand'"> </app-miniforminput>
+    <app-miniforminput [label]="'Specitfication Code'" [placeholder]="'code'" [controlName]="'specificationCode'"> </app-miniforminput>
+    <app-miniforminput [label]="'Commodity Weight'" [placeholder]="'weight'" [controlName]="'commodityWeight'"> </app-miniforminput>
+    <app-miniforminput [label]="'Commodity Length'" [placeholder]="'length'" [controlName]="'commodityLength'"> </app-miniforminput>
+    <app-miniforminput [label]="'Commodity Width'" [placeholder]="'width'" [controlName]="'commodityWidth'"> </app-miniforminput>
+    <app-miniforminput [label]="'Commodity Height'" [placeholder]="'height'" [controlName]="'commodityHeight'"> </app-miniforminput>
+    <app-miniforminput [label]="'Commodity Volume'" [placeholder]="'volume'" [controlName]="'commodityVolume'"> </app-miniforminput>
+    <app-miniforminput [label]="'Commodity Cost'" [placeholder]="'cost'" [controlName]="'commodityCost'"> </app-miniforminput>
+    <app-miniforminput [label]="'Commodity Price'" [placeholder]="'price'" [controlName]="'commodityPrice'"> </app-miniforminput>
+</form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button color="warn" (click)="onNoClick()">Cancel</button>
+  <button mat-button [disabled]="!userManagement.valid" (click)="submit()" cdkFocusInitial>Submit</button>
+</mat-dialog-actions>

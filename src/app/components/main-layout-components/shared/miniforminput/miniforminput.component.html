@@ -1,0 +1,14 @@
+<ng-container class="container">
+    <mat-form-field [formGroup]="companyForm" class="example-full-width d-flex justify-content-center">
+      <mat-label>{{ label }} </mat-label>
+      <input
+        [formControl]="control"
+        type="{{ type }}"
+        matInput
+        placeholder="{{ placeholder }}"
+      />
+      <mat-hint>Fill the form please</mat-hint>
+      <mat-error *ngFor="let error of getErrors()">{{ error }}</mat-error>
+    </mat-form-field>
+  </ng-container>
+  
