@@ -1,103 +1,135 @@
+@use "@angular/material" as mat;
+$theme: mat.define-theme(
+  (
+    color: (
+      theme-type: dark,
+      primary: mat.$violet-palette,
+    ),
+    typography: (
+      brand-family: "Comic Sans",
+      bold-weight: 900,
+    ),
+    density: (
+      scale: -1,
+    ),
+  )
+);
+
+#login-ele {
+  @include mat.core-theme($theme);
+  @include mat.button-theme($theme);
+  @include mat.checkbox-theme($theme);
+}
+
 :root {
-    --muted-color: #b2b0b5;
-    --green-color: #4caf50;
-    }
-.ndclass{
-    height: 100vh;
-    z-index: 111;
-    background-color: #fafafa;
+  --muted-color: #b2b0b5;
+  --green-color: #4caf50;
 }
-.w-30{
-    width: 30%;
+.ndclass {
+  height: 100vh;
+  z-index: 111;
+  background-color: #fafafa;
 }
-.w-70{
-    width: 70%;
+.w-30 {
+  width: 30%;
 }
-.font{
-    font-size: 12px;
-    color: #A02FB3;
-    margin-bottom: 10px;
-    padding: 0px;
+.w-70 {
+  width: 70%;
+}
+.font {
+  font-size: 12px;
+  color: #a02fb3;
+  margin-bottom: 10px;
+  padding: 0px;
 }
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    text-align: center;
-    line-height: 10px;
-  }
-  ::ng-deep.mat-mdc-form-field-infix{
-    background: white !important;
-  }
-  ::ng-deep.mat-mdc-form-field-has-icon-suffix .mat-mdc-text-field-wrapper{
-    background-color: white !important;
-  }
-.center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  line-height: 10px;
+}
+::ng-deep.mat-mdc-form-field-infix {
+  background-color: white !important;
+}
+::ng-deep.mat-mdc-form-field-has-icon-suffix .mat-mdc-text-field-wrapper {
+  background-color: white !important;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
 }
 ::ng-deep.mat-mdc-raised-button:not(:disabled) {
-    background-color:#A02FB3 !important;
-    color: white !important;
-    border-radius: 5px !important;
+  background-color: #a02fb3 !important;
+  color: white !important;
+  border-radius: 5px !important;
 }
 .example-form-field {
-    width: 450px;
-  }
+  width: 450px;
+}
 
-  .example-section {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    height: 60px;
-    color: #b2b0b5;
-  }
+.example-section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 60px;
+  color: #b2b0b5;
+}
 //   ::ng-deep.mat-internal-form-field>label{
 //     color: var(--muted-color);  ;
 //   }
-  ::ng-deep.mat-internal-form-field>label{
-    color: #b2b0b5!important;
-  }
-  ::ng-deep.mat-accent.mat-mdc-checkbox{
-    --mdc-checkbox-selected-pressed-icon-color: #b2b0b5;
-    --mdc-checkbox-selected-checkmark-color: #ffffff;
-    --mdc-checkbox-selected-focus-icon-color: #b2b0b5;
-    --mdc-checkbox-selected-hover-icon-color: #b2b0b5;
-    --mdc-checkbox-selected-icon-color: #b2b0b5;
-    --mdc-checkbox-selected-focus-state-layer-color: #b2b0b5;
-    --mdc-checkbox-selected-hover-state-layer-color: #b2b0b5;
-    --mdc-checkbox-unselected-pressed-state-layer-color: #b2b0b5;
-    --mat-checkbox-disabled-label-color: rgba(26, 27, 31, 0.38);
-    --mat-checkbox-label-text-color: #b2b0b5
-  }
-  *{
-    overflow: hidden;
-  }
-  .language-menu {
-    display: flex;
-    flex-direction: column; /* Arrange items in a column */
-  }
-  
-  .language-menu div {
-    padding: 8px 16px;
-  }
-  
-  .selected-language {
-    background-color: #A02FB3; /* Darker background for the selected language */
-  }
-  .pointer{
-    cursor: pointer;
-    padding: 10px;
-  }
-  .pointer:hover{
-    background-color: #65617D;
-  }
-  ::ng-deep .snackbar-success {
-    background-color: #4caf50 !important; /* Green color */
-    color: #fff !important; /* Text color */
-  }
+::ng-deep.mat-internal-form-field > label {
+  color: #b2b0b5 !important;
+}
+// ::ng-deep.mat-accent.mat-mdc-checkbox{
+//   --mdc-checkbox-selected-pressed-icon-color: #b2b0b5;
+//   --mdc-checkbox-selected-checkmark-color: #ffffff;
+//   --mdc-checkbox-selected-focus-icon-color: #b2b0b5;
+//   --mdc-checkbox-selected-hover-icon-color: #b2b0b5;
+//   --mdc-checkbox-selected-icon-color: #b2b0b5;
+//   --mdc-checkbox-selected-focus-state-layer-color: #b2b0b5;
+//   --mdc-checkbox-selected-hover-state-layer-color: #b2b0b5;
+//   --mdc-checkbox-unselected-pressed-state-layer-color: #b2b0b5;
+//   --mat-checkbox-disabled-label-color: rgba(26, 27, 31, 0.38);
+//   --mat-checkbox-label-text-color: #b2b0b5
+// }
+
+.language-menu div {
+  padding: 8px 16px;
+}
+
+.selected-language {
+  background-color: #a02fb3; /* Darker background for the selected language */
+}
+.pointer {
+  cursor: pointer;
+  padding: 10px;
+}
+.pointer:hover {
+  background-color: #65617d;
+}
+::ng-deep .snackbar-success {
+  background-color: #4caf50 !important; /* Green color */
+  color: #fff !important; /* Text color */
+}
+/* Style for error (red) */
+::ng-deep .snackbar-error {
+  background-color: #f44336 !important; /* Red color */
+  color: #fff !important; /* Text color */
+}
+
+/* Style for info (blue) */
+::ng-deep .snackbar-info {
+  background-color: #2196f3 !important; /* Blue color */
+  color: #fff !important; /* Text color */
+}
+::ng-deep .snackbar-error {
+  background-color: #f44336 !important; /* Red color */
+  color: black !important; /* Text color */
+}

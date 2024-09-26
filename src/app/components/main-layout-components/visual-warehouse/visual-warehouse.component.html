@@ -1,1 +1,16 @@
-<p>visual-warehouse works!</p>
+<div class="center" *ngIf="!isCompleted">
+  <div class="progress-container">
+    <div class="progress-percentage">
+      {{ progressValue | number : "1.0-0" }}%
+    </div>
+    <mat-progress-bar
+      mode="determinate"
+      [value]="progressValue"
+    ></mat-progress-bar>
+  </div>
+</div>
+<div>
+  <div *ngIf="isCompleted">
+    <img src="/assets/whitebg.png" alt="">
+  </div>
+</div>

@@ -1,8 +1,42 @@
-.table-container {
-    width: 100%;
-    margin: 0 auto;
+
+.table-wrapper {
+  .action-buttons-above-table {
+    display: flex;
+    justify-content: space-between; /* Align buttons to the left and input to the right */
+    margin-bottom: 10px;
+    align-items: center;
+    
+    .buttons-container {
+      display: flex;
+      align-items: center;
+      button {
+        margin-right: 10px; /* Space between buttons */
+      }
+    }
+
+    .forms-above-table {
+      display: flex; /* Make it a flex container */
+      justify-content: flex-end; /* Push inputs to the right */
+      align-items: center; /* Center align inputs vertically */
+        .form-container{
+          margin-left: 10px;
+          min-width: 250px;
+        }
+    }
   }
-  
+
+  .table-container {
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+}
+.table-hr {
+  width: 79%;
+  // border-top: 2px solid #ddd;
+  position: fixed;
+  margin: 0; /* Remove any extra margin */
+}
   .no-data-message {
     display: flex;
     align-items: center;
@@ -11,26 +45,15 @@
     text-align: center;
     font-size: 1.2rem;
     color: gray;
+    height: 60vh;
   }
   
-  .table-wrapper {
-    .action-buttons-above-table {
-      margin-bottom: 10px;
-      button {
-        margin-left: 10px;
-      }
-    }
   
-    .table-container {
-      margin-top: 20px;
-    }
-  }
   .mat-mdc-header-cell {
   background-color: #ececee !important;
   }
   ::ng-deep.mat-mdc-form-field {
-    width: 100%;
-    width:200px; 
+    width: 100% ;
   }
 ::ng-deep.example-full-width{
   width: 100% !important;

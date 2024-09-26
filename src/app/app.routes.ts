@@ -20,6 +20,10 @@ import { WarehouseSettingComponent } from './components/main-layout-components/b
 import { OwnerInformationComponent } from './components/main-layout-components/basic-settings/owner-information/owner-information.component';
 import { FreightSettingComponent } from './components/main-layout-components/basic-settings/freight-setting/freight-setting.component';
 import { CustomerInformationComponent } from './components/main-layout-components/basic-settings/customer-information/customer-information.component';
+import { StockManagementComponent } from './components/main-layout-components/statistic-analysis/stock-management/stock-management.component';
+import { SafteyStockComponent } from './components/main-layout-components/statistic-analysis/saftey-stock/saftey-stock.component';
+import { ReceivingStatisticsComponent } from './components/main-layout-components/statistic-analysis/receiving-statistics/receiving-statistics.component';
+import { ShipmentStatisticsComponent } from './components/main-layout-components/statistic-analysis/shipment-statistics/shipment-statistics.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -122,6 +126,26 @@ export const routes: Routes = [
     path: 'customerinformation',
     component: CustomerInformationComponent,
     data: { breadcrumb: 'breadcrumb.basicSettings.customerInformation' },
+      },
+  {
+    path: 'stockmanagement',
+    component: StockManagementComponent,
+    data: { breadcrumb: 'breadcrumb.staticAnalysis.stockManagement' },
+      },
+  {
+    path: 'safetystock',
+    component: SafteyStockComponent,
+    data: { breadcrumb: 'breadcrumb.staticAnalysis.safetyStock' },
+      },
+  {
+    path: 'receivingstatistics',
+    component: ReceivingStatisticsComponent,
+    data: { breadcrumb: 'breadcrumb.staticAnalysis.receivingStatistics' },
+      },
+  {
+    path: 'shipmentstatistics',
+    component: ShipmentStatisticsComponent,
+    data: { breadcrumb: 'breadcrumb.staticAnalysis.shipmentStatistics' },
       },
     ],
   },

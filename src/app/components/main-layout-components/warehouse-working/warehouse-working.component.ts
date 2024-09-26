@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-warehouse-working',
@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './warehouse-working.component.html',
   styleUrl: './warehouse-working.component.scss'
 })
-export class WarehouseWorkingComponent {
-
+export class WarehouseWorkingComponent  {
+ 
 }

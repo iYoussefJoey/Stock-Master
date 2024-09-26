@@ -1,0 +1,28 @@
+.progress-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100vh;
+  }
+  
+  .progress-percentage {
+    position: absolute;
+    top: 0px; /* Adjust as needed to position above the bar */
+    font-size: 14px;
+    font-weight: bold;
+    color: #555; /* Adjust color for better visibility */
+    z-index: 2;
+  }
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    overflow: hidden;
+}
+::ng-deep.mat-mdc-progress-bar {
+    --mdc-linear-progress-track-height: 24px;
+    --mdc-linear-progress-active-indicator-height: 24px;
+}

@@ -91,6 +91,39 @@
   "toBeSorted":"To Be Sorted",
   "toBePutOnTheShelf":"To Be Put On The Shelf",
   "receiptDetails":"Receipt Details",
+  "welcomeToModern":"Welcome To Modern",
+  "rememberMe":"Remember Me",
+  "signIn":"Sign In",
+  "enterYourPassword":"Enter Your Password",
+  "goodsOwnerName":"Goods Owner Name",
+  "formName":"Form Name",
+  "warehouse":"WareHouse",
+  "locationCode":"Location Code",
+  "tradeName":"Trade Name",
+  "serialNumber":"Serial Number",
+  "quantity":"Quantity",
+  "quantitys":"Quantitys",
+  "availableQuantity":"Available Quantity",
+  "lockedQuantity":"Locked Quantity",
+  "expirationDate":"Expiration Date",
+  "listingDate":"Listing Date",
+  "identifying":"Identifying",
+  "specificationName":"Specification Name",
+  "frozenQuantity":"Frozen Quantity",
+  "safetyStockQuantity":"Safety Stock Quantity",
+  "asnNumber":"ASN Number",
+  "asnQuantity":"ASN Quantity",
+  "weight":"Weight",
+  "volume":"Volume",
+  "actualQuantity":"Actualy Quantity",
+  "sortedQuantity":"Sorted Quantity",
+  "shortageQuantity":"Shortage Quantity",
+  "moreQuantity":"More Quantity",
+  "damageQuantity":"Damage Quantity",
+  "deliveryQuantity":"Delivery Quantity",
+  "deliveryTime":"Delivery Time",
+  "shipmentNumber":"Shipment Number",
+
 
     "breadcrumb": {
       "home": "Home Page",
@@ -112,9 +145,15 @@
         "ownerInformation": "Basic Settings / Owner Information",
         "freightSettings": "Basic Settings / Freight Settings",
         "customerInformation": "Basic Settings / Customer Information"
-      }
+      },
+      "staticAnalysis": {
+        "stockManagement": "Static Analysis / Stock Management",
+        "safetyStock": "Static Analysis / Safety Stock",
+        "receivingStatistics": "Static Analysis / Receiving Statistics",
+        "shipmentStatistics": "Static Analysis / Shipment Statistics"
     }
 
   
   }
+}
   
